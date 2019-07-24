@@ -1,0 +1,8 @@
+2019-04-04 11:11:00,748 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null - ===== Program Start
+2019-04-04 11:11:02,932 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null -  MainMDIForm Initialize
+2019-04-04 11:11:09,515 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-04 11:11:11,321 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-04 11:11:11,706 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-04 11:11:11,830 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-04 11:11:11,881 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null -         MasterManager - 1.0.7033.20109 表示
+2019-04-04 11:14:48,009 [1] [INFO ] MasterManager, Version=1.0.7033.20109, Culture=neutral, PublicKeyToken=null - ===== Program End

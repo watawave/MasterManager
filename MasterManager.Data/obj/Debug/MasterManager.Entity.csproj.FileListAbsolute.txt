@@ -1,0 +1,6 @@
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\bin\Debug\MasterManager.Entity.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\bin\Debug\MasterManager.Entity.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Entity.csprojAssemblyReference.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Entity.csproj.CoreCompileInputs.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Entity.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Entity.pdb

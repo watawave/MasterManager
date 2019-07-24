@@ -1,0 +1,15 @@
+2019-04-08 12:49:15,317 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null - ===== Program Start
+2019-04-08 12:49:15,899 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null -  MainMDIForm Initialize
+2019-04-08 12:49:17,274 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-08 12:49:18,149 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-08 12:49:18,462 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-08 12:49:18,571 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-08 12:49:18,587 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null -         MasterManager - 1.0.7037.23066 表示
+2019-04-08 12:49:39,886 [1] [INFO ] MasterManager, Version=1.0.7037.23066, Culture=neutral, PublicKeyToken=null - ===== Program End
+2019-04-08 16:01:46,462 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null - ===== Program Start
+2019-04-08 16:01:46,881 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null -  MainMDIForm Initialize
+2019-04-08 16:01:48,325 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-08 16:01:48,857 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-08 16:01:50,260 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null -  TableListForm Initialize
+2019-04-08 16:01:50,350 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null - MDI子フォーム 表示
+2019-04-08 16:01:50,375 [1] [INFO ] MasterManager, Version=1.0.7037.28836, Culture=neutral, PublicKeyToken=null -         MasterManager - 1.0.7037.28836 表示

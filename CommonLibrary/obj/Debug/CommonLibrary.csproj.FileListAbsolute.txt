@@ -1,0 +1,9 @@
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\bin\Debug\CommonLibrary.dll
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\bin\Debug\CommonLibrary.pdb
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\bin\Debug\log4net.dll
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\bin\Debug\log4net.xml
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\obj\Debug\CommonLibrary.csprojAssemblyReference.cache
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\obj\Debug\CommonLibrary.csproj.CoreCompileInputs.cache
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\obj\Debug\CommonLibrary.csproj.CopyComplete
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\obj\Debug\CommonLibrary.dll
+E:\05-SRC\10-dotNet\MasterManager\CommonLibrary\obj\Debug\CommonLibrary.pdb

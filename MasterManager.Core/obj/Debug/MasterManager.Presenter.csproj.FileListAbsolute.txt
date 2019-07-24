@@ -1,0 +1,15 @@
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.csprojAssemblyReference.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.csproj.CoreCompileInputs.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\MasterManager.Presenter.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\MasterManager.Presenter.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\MasterManager.View.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\MasterManager.View.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.csproj.CopyComplete
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\CommonLibrary.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\log4net.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\CommonLibrary.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\bin\Debug\log4net.xml
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.Properties.Resources.resources
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Presenter\obj\Debug\MasterManager.Presenter.csproj.GenerateResource.cache
