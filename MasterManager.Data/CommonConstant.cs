@@ -1,4 +1,4 @@
-﻿namespace INTEC.Med.MasterManager.Data
+﻿namespace INTEC.Med.MasterManager
 {
     public static class CommonConstant
     {
@@ -25,7 +25,7 @@
         /// </summary>
         public static class Messages
         {
-            public static readonly string noMDBFoundConst = "指定したフォルダにmdbファイルが見つかりませんでした。";
+            public static readonly string noMDBFoundConst = "指定したフォルダにMDBファイルが見つかりませんでした。";
         }
 
         /// <summary>
@@ -38,7 +38,7 @@
             public static readonly string defaultOpenPathConst = @"C:\egmain-ex\Data\mdb";
 
             //フォルダを開くときの絞り込み拡張子
-            public static readonly string filterExtensionConst = ".mdb";
+            public static readonly string filterExtensionConst = "*.mdb";
         }
     }
 }

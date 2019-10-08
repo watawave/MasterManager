@@ -1,4 +1,4 @@
-﻿namespace INTEC.Med.MasterManager.Forms {
+﻿namespace INTEC.Med.MasterManager {
     partial class MainMDIForm {
         /// <summary>
         /// 必要なデザイナー変数です。

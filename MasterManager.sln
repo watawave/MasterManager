@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterManager.Forms", "MasterManager.Forms\MasterManager.Forms.csproj", "{F05CE40C-F792-4CC7-949C-1E2000585330}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterManager.Data", "MasterManager.Data\MasterManager.Data.csproj", "{1F4C2715-6AEC-4B6E-9CB2-9540AA0DAD28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{8EC4CCB4-CF5F-4819-BE1F-ABEAAF3054F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterManager.Test", "MasterManager.Test\MasterManager.Test.csproj", "{729B240F-6BF3-4C69-AAAF-DC98C45C26A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{8EC4CCB4-CF5F-4819-BE1F-ABEAAF3054F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EC4CCB4-CF5F-4819-BE1F-ABEAAF3054F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EC4CCB4-CF5F-4819-BE1F-ABEAAF3054F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729B240F-6BF3-4C69-AAAF-DC98C45C26A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729B240F-6BF3-4C69-AAAF-DC98C45C26A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729B240F-6BF3-4C69-AAAF-DC98C45C26A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729B240F-6BF3-4C69-AAAF-DC98C45C26A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

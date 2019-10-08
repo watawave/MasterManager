@@ -1,4 +1,4 @@
-﻿namespace INTEC.Med.MasterManager.Forms {
+﻿namespace INTEC.Med.MasterManager {
 	partial class TableCollectionForm {
 		/// <summary>
 		/// 必要なデザイナー変数です。

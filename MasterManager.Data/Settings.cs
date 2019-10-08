@@ -1,4 +1,4 @@
-﻿namespace INTEC.Med.MasterManager.Data.Properties
+﻿namespace INTEC.Med.MasterManager.Properties
 {
     // このクラスでは設定クラスでの特定のイベントを処理することができます:
     //  SettingChanging イベントは、設定値が変更される前に発生します。

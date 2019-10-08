@@ -1,5 +1,5 @@
-﻿namespace INTEC.Med.MasterManager.Forms
-{
+﻿namespace INTEC.Med.MasterManager { 
+
     partial class HospCollectionForm
     {
         /// <summary>

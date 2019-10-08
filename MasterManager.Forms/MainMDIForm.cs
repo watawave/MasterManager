@@ -1,13 +1,12 @@
 ﻿using INTEC.Med.CommonLibrary;                           //add
-using INTEC.Med.MasterManager.Core.ViewsAbstraction;     //add
+using INTEC.Med.MasterManager.ViewsAbstraction;     //add
 using log4net;                                           //add(ログ取得用）
 using MaterialSkin;                                      //add(マテリアルスキン)
-using WeifenLuo.WinFormsUI.Docking;	                     //add(dockpanel)
 using System;
-using System.Reflection;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;	                     //add(dockpanel)
 
-namespace INTEC.Med.MasterManager.Forms
+namespace INTEC.Med.MasterManager
 {
     public partial class MainMDIForm : MaterialSkin.Controls.MaterialForm, IMainMDIView
     {
@@ -21,14 +20,6 @@ namespace INTEC.Med.MasterManager.Forms
 
         public event SaveWindowSizeHandler _saveWindowSize;
 
-        private int _windowTop;
-        private int _windowLeft;
-        private int _windowWidth;
-        private int _windowHeight;
-        private double _dockSizeHeight;
-        private double _dockSizeWidth;
-
-
         #endregion _member変数
 
         #region プロパティ（インタフェース用）
@@ -39,30 +30,34 @@ namespace INTEC.Med.MasterManager.Forms
         }
 
         public int WindowTop {
-            get { return _windowTop; }
-            set { _windowTop = value; }
-        }
-        public int WindowLeft {
-            get { return _windowLeft; }
-            set { _windowLeft = value; }
-        }
-        public int WindowHeight {
-            get { return _windowHeight; }
-            set { _windowHeight = value; }
-        }
-        public int WindowWidth {
-            get { return _windowWidth; }
-            set { _windowWidth = value; }
-        }
-        public double DockSizeHeight {
-            get { return _dockSizeHeight; }
-            set { _dockSizeHeight = value; }
-        }
-        public double DockSizeWidth {
-            get { return _dockSizeWidth; }
-            set { _dockSizeWidth = value; }
+            get { return this.Top; }
+            set { this.Top = value; }
         }
 
+        public int WindowLeft {
+            get { return this.Left; }
+            set { this.Left = value; }
+        }
+
+        public int WindowHeight {
+            get { return this.Height; }
+            set { this.Height = value; }
+        }
+
+        public int WindowWidth {
+            get { return this.Width; }
+            set { this.Width = value; }
+        }
+
+        public double DockSizeHeight {
+            get { return uxMainDockPanel.DockTopPortion; }
+            set { uxMainDockPanel.DockTopPortion = value; }
+        }
+
+        public double DockSizeWidth {
+            get { return uxMainDockPanel.DockLeftPortion; }
+            set { uxMainDockPanel.DockLeftPortion = value; }
+        }
 
         #endregion プロパティ（インタフェース用）
 
@@ -116,36 +111,22 @@ namespace INTEC.Med.MasterManager.Forms
             MDIFormTop.Show(uxMainDockPanel, DockState.DockTop);
         }
 
-
         private void MainMDIForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             _saveWindowSize?.Invoke();
         }
 
         #region イベントPRESENTER⇒VIEW
-        //TODO:インターフェイス経由していないのでダメ
+
         public void ShowView()
         {
-            //TODO:ここで処理しなくてもプロパティでバインドさせて、フォームロードメソッドでやれば？
-            _log.Debug("Propertyからウィンドウサイズの取得・設定");
-            this.Top = _windowTop;
-            this.Left = _windowLeft;
-            this.Height = _windowHeight;
-            this.Width = _windowWidth;
-            uxMainDockPanel.DockTopPortion = _dockSizeHeight;
-            uxMainDockPanel.DockLeftPortion = _dockSizeWidth;
-
             _log.Info(this.Text + " 表示");
             this.ShowDialog();
         }
 
-
-
-        //TODO:インターフェイス経由していないのでダメ
         public void HandleError(Exception ex)
         {
-            
-            _log.Error(ex.Message);
+            _log.Info("エラーメッセージ表示");
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

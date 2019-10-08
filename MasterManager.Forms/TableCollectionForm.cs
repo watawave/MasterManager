@@ -1,10 +1,10 @@
 ﻿using INTEC.Med.CommonLibrary;                         //add
-using INTEC.Med.MasterManager.Core.ViewsAbstraction;   //add
+using INTEC.Med.MasterManager.ViewsAbstraction;   //add
 using log4net;                                         //add(ログ取得用）
 using System;
 using System.Windows.Forms;
 
-namespace INTEC.Med.MasterManager.Forms
+namespace INTEC.Med.MasterManager
 {
     public partial class TableCollectionForm : WeifenLuo.WinFormsUI.Docking.DockContent, ITableCollectionView
     {
@@ -39,21 +39,15 @@ namespace INTEC.Med.MasterManager.Forms
 
         #region イベントPRESENTER⇒VIEW
 
-        /// <summary>
-        /// このフォームを表示するイベント
-        /// </summary>
         public void ShowView()
         {
             _log.Info(this.Text + " 表示");
             this.ShowDialog();
         }
 
-        /// <summary>
-        /// エラーメッセージ表示用のイベント
-        /// </summary>
-        /// <param name="ex"></param>
         public void HandleError(Exception ex)
         {
+            _log.Info("エラーメッセージ表示");
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

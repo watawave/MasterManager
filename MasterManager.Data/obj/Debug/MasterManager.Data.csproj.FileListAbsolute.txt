@@ -4,10 +4,9 @@ E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\bin\Debug\MasterManager.D
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\bin\Debug\MasterManager.Data.pdb
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Data.dll
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Entity\obj\Debug\MasterManager.Data.pdb
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.Data.dll
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.Data.pdb
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.Data.csprojAssemblyReference.cache
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.Data.csproj.CoreCompileInputs.cache
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.Data.dll
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.Data.pdb
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.Data.dll.config
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.dll.config
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\bin\Debug\MasterManager.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Data\obj\Debug\MasterManager.pdb

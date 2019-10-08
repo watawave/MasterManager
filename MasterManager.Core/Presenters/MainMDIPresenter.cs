@@ -1,11 +1,9 @@
-﻿using INTEC.Med.MasterManager.Core.ViewsAbstraction;
-using INTEC.Med.MasterManager.Data;
-using INTEC.Med.CommonLibrary;
+﻿using INTEC.Med.CommonLibrary;
+using INTEC.Med.MasterManager.ViewsAbstraction;
+using log4net;
 using System.Reflection;
 
-using log4net;
-
-namespace INTEC.Med.MasterManager.Core.Presenters
+namespace INTEC.Med.MasterManager.Presenters
 {
     public class MainMDIPresenter
     {
@@ -24,7 +22,6 @@ namespace INTEC.Med.MasterManager.Core.Presenters
             _mainMDIView._showTableView += ShowTableView;
             _mainMDIView._saveWindowSize += SaveWindowSize;
 
-
             //フォーム情報の定義
             _log.Info("ウィンドウサイズ情報を定義");
             Assembly mainAssembly = Assembly.GetEntryAssembly();
@@ -39,54 +36,43 @@ namespace INTEC.Med.MasterManager.Core.Presenters
 
         #region Viewから受け取った処理
 
-        /// <summary>
-        /// 子プレゼンターに子フォームのインスタンスを持たせる
-        /// ※子フォームのインスタンスは親フォームで作る
-        /// </summary>
-        /// <param name="hospCollectionView"></param>
+        #region 子プレゼンター作成処理（フォームのインスタンスを持たせつつ）
+
         private void ShowHospView(IHospCollectionView hospCollectionView)
         {
             _log.Info("hospCollectionフォーム作成");
             var hospCollectionPresenter = new HospCollectionPresenter(hospCollectionView);
         }
 
-        /// <summary>
-        /// 子プレゼンターに子フォームのインスタンスを持たせる
-        /// ※子フォームのインスタンスは親フォームで作る
-        /// </summary>
-        /// <param name="tableCollectionView"></param>
         private void ShowTableView(ITableCollectionView tableCollectionView)
         {
             _log.Info("tableCollectionフォーム作成");
             var tableCollectionPresenter = new TableCollectionPresenter(tableCollectionView);
         }
 
-        /// <summary>
-        /// 子プレゼンターに子フォームのインスタンスを持たせる
-        /// ※子フォームのインスタンスは親フォームで作る
-        /// </summary>
-        /// <param name="tableCollectionView"></param>
-        private void ShowMDBSelectorView(IMDBSelectorView MDBSelectorView)
-        {
-            _log.Info("MDBSelectorフォーム作成");
-            var MDBSelectorPresenter = new MDBSelectorPresenter(MDBSelectorView);
-        }
+        #endregion 子プレゼンター作成処理（フォームのインスタンスを持たせつつ）
 
         /// <summary>
         /// フォームクローズ時にウィンドウサイズを保存する
         /// </summary>
         private void SaveWindowSize()
         {
-            //TODO:ログのはきかたが下手
             _log.Info("Windowフォームのポジションを保存");
+            SettingReader.WindowTop = _mainMDIView.WindowTop;
+            SettingReader.WindowLeft = _mainMDIView.WindowLeft;
+            SettingReader.WindowWidth = _mainMDIView.WindowWidth;
+            SettingReader.WindowHeight = _mainMDIView.WindowHeight;
+            SettingReader.DockSizeHeight = _mainMDIView.DockSizeHeight;
+            SettingReader.DockSizeWidth = _mainMDIView.DockSizeWidth;
 
-            SettingReader.WindowTop= _mainMDIView.WindowTop;
-            SettingReader.WindowLeft= _mainMDIView.WindowLeft;
-            SettingReader.WindowWidth= _mainMDIView.WindowWidth;
-            SettingReader.WindowHeight= _mainMDIView.WindowHeight;
-            SettingReader.DockSizeHeight= _mainMDIView.DockSizeHeight;
-            SettingReader.DockSizeWidth= _mainMDIView.DockSizeWidth;
+            _log.Debug("WindowTop=" + SettingReader.WindowTop);
+            _log.Debug("WindowLeft=" + SettingReader.WindowLeft);
+            _log.Debug("WindowWidth=" + SettingReader.WindowWidth);
+            _log.Debug("WindowHeight=" + SettingReader.WindowHeight);
+            _log.Debug("DockHeight=" + SettingReader.DockSizeHeight);
+            _log.Debug("DockWidth=" + SettingReader.DockSizeWidth);
         }
+
         #endregion Viewから受け取った処理
     }
 }

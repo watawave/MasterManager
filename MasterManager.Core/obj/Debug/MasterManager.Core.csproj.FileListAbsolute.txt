@@ -17,9 +17,7 @@ E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.Cor
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.Core.pdb
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\CommonLibrary.dll
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\log4net.dll
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.Data.dll
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\CommonLibrary.pdb
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.Data.pdb
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\log4net.xml
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Core.csprojAssemblyReference.cache
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Core.csproj.GenerateResource.cache
@@ -27,5 +25,7 @@ E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Cor
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Core.csproj.CopyComplete
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Core.dll
 E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\MasterManager.Core.pdb
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\Intec.Med.MasterManager.Core.Properties.Resources.resources
-E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.Data.dll.config
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\bin\Debug\MasterManager.dll.config
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Core\obj\Debug\INTEC.Med.MasterManager.Properties.Resources.resources

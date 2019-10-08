@@ -1,6 +1,5 @@
 ﻿using INTEC.Med.CommonLibrary;
-using INTEC.Med.MasterManager.Core.ViewsAbstraction;
-using INTEC.Med.MasterManager.Data;
+using INTEC.Med.MasterManager.ViewsAbstraction;
 using log4net;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 
-namespace INTEC.Med.MasterManager.Core.Presenters
+namespace INTEC.Med.MasterManager.Presenters
 {
     public class HospCollectionPresenter
     {

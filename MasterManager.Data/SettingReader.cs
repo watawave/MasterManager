@@ -1,70 +1,76 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace INTEC.Med.MasterManager.Data
+﻿namespace INTEC.Med.MasterManager
 {
-
     /// <summary>
     /// settings.settingの情報を読み書きする
     /// プロパティ郡クラス
     /// </summary>
     public static class SettingReader
     {
-        #region     プロパティ
+        #region プロパティ
 
-        
         public static int WindowTop {
             get { return Properties.Settings.Default.WindowTop; }
-            set {
+            set
+            {
                 Properties.Settings.Default.WindowTop = value;
                 Properties.Settings.Default.Save();
             }
         }
-        
+
         public static int WindowLeft {
             get { return Properties.Settings.Default.WindowLeft; }
-            set {
+            set
+            {
                 Properties.Settings.Default.WindowLeft = value;
                 Properties.Settings.Default.Save();
             }
         }
 
-        
         public static int WindowHeight {
             get { return Properties.Settings.Default.WindowHeight; }
-            set {
+            set
+            {
                 Properties.Settings.Default.WindowHeight = value;
                 Properties.Settings.Default.Save();
             }
         }
-        
+
         public static int WindowWidth {
             get { return Properties.Settings.Default.WindowWidth; }
-            set {
+            set
+            {
                 Properties.Settings.Default.WindowWidth = value;
                 Properties.Settings.Default.Save();
             }
         }
-        
+
         public static double DockSizeHeight {
             get { return Properties.Settings.Default.DockSizeHeight; }
-            set {
+            set
+            {
                 Properties.Settings.Default.DockSizeHeight = value;
                 Properties.Settings.Default.Save();
             }
         }
-       
+
         public static double DockSizeWidth {
             get { return Properties.Settings.Default.DockSizeWidth; }
-            set {
+            set
+            {
                 Properties.Settings.Default.DockSizeWidth = value;
                 Properties.Settings.Default.Save();
             }
         }
-        #endregion
 
+        public static string LastOpenPath {
+            get { return Properties.Settings.Default.LastOpenPath; }
+            set
+            {
+                Properties.Settings.Default.LastOpenPath = value;
+                Properties.Settings.Default.Save();
+            }
+        }
     }
+
+    #endregion プロパティ
 }

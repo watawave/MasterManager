@@ -1,11 +1,11 @@
 ﻿using INTEC.Med.CommonLibrary;                          //add
-using INTEC.Med.MasterManager.Core.Presenters;          //add
-using INTEC.Med.MasterManager.Core.ViewsAbstraction;    //add
+using INTEC.Med.MasterManager.Presenters;          //add
+using INTEC.Med.MasterManager.ViewsAbstraction;    //add
 using log4net;                                          //add
 using System;
 using System.Windows.Forms;
 
-namespace INTEC.Med.MasterManager.Forms
+namespace INTEC.Med.MasterManager
 {
     internal static class Program
     {

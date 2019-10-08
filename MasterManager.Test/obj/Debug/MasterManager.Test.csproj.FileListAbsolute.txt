@@ -1,0 +1,17 @@
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\MasterManager.Test.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\MasterManager.Test.pdb
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\obj\Debug\MasterManager.Test.csprojAssemblyReference.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\obj\Debug\MasterManager.Test.csproj.CoreCompileInputs.cache
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\obj\Debug\MasterManager.Test.csproj.CopyComplete
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\obj\Debug\MasterManager.Test.dll
+E:\05-SRC\10-dotNet\MasterManager\MasterManager.Test\obj\Debug\MasterManager.Test.pdb

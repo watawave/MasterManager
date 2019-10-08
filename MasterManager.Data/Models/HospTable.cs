@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MasterManager.Data.Models
+namespace MasterManager.Models
 {
     /// <summary>
     /// 各MDBのテーブル名を格納するクラス

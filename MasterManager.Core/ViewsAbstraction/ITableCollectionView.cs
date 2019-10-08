@@ -1,4 +1,4 @@
-﻿namespace INTEC.Med.MasterManager.Core.ViewsAbstraction
+﻿namespace INTEC.Med.MasterManager.ViewsAbstraction
 {
     public interface ITableCollectionView : IBaseView
     {

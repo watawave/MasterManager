@@ -1,4 +1,6 @@
-﻿namespace INTEC.Med.MasterManager.Forms
+﻿using System;
+
+namespace INTEC.Med.MasterManager
 {
     partial class MDBSelectorForm
     {
@@ -28,81 +30,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.objectListView1 = new BrightIdeasSoftware.ObjectListView();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.uxSelectFolderCommand = new MaterialSkin.Controls.MaterialFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).BeginInit();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.uxSelectMDBFolderCommand = new MaterialSkin.Controls.MaterialFlatButton();
+            this.uxSelectedMDBFolderPathText = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.uxSelectedMDBFolderItemsDataListView = new BrightIdeasSoftware.DataListView();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxSelectedMDBFolderItemsDataListView)).BeginInit();
             this.SuspendLayout();
             // 
-            // objectListView1
+            // splitContainer1
             // 
-            this.objectListView1.CellEditUseWholeCell = false;
-            this.objectListView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.objectListView1.Location = new System.Drawing.Point(12, 144);
-            this.objectListView1.Name = "objectListView1";
-            this.objectListView1.Size = new System.Drawing.Size(525, 336);
-            this.objectListView1.TabIndex = 26;
-            this.objectListView1.UseCompatibleStateImageBehavior = false;
-            this.objectListView1.View = System.Windows.Forms.View.Details;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 65);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // materialSingleLineTextField1
+            // splitContainer1.Panel1
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(109, 84);
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(351, 23);
-            this.materialSingleLineTextField1.TabIndex = 25;
-            this.materialSingleLineTextField1.Text = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
             // 
-            // uxSelectFolderCommand
+            // splitContainer1.Panel2
             // 
-            this.uxSelectFolderCommand.AutoSize = true;
-            this.uxSelectFolderCommand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.uxSelectFolderCommand.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uxSelectFolderCommand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.uxSelectFolderCommand.Depth = 0;
-            this.uxSelectFolderCommand.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.uxSelectFolderCommand.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.uxSelectFolderCommand.Location = new System.Drawing.Point(8, 79);
-            this.uxSelectFolderCommand.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.uxSelectFolderCommand.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uxSelectFolderCommand.Name = "uxSelectFolderCommand";
-            this.uxSelectFolderCommand.Primary = false;
-            this.uxSelectFolderCommand.Size = new System.Drawing.Size(94, 36);
-            this.uxSelectFolderCommand.TabIndex = 24;
-            this.uxSelectFolderCommand.Text = "フォルダを選ぶ";
-            this.uxSelectFolderCommand.UseVisualStyleBackColor = false;
-            this.uxSelectFolderCommand.Click += new System.EventHandler(this.uxSelectFolderCommand_Click);
+            this.splitContainer1.Panel2.Controls.Add(this.uxSelectedMDBFolderItemsDataListView);
+            this.splitContainer1.Size = new System.Drawing.Size(552, 731);
+            this.splitContainer1.SplitterDistance = 32;
+            this.splitContainer1.TabIndex = 27;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.uxSelectMDBFolderCommand);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.uxSelectedMDBFolderPathText);
+            this.splitContainer2.Panel2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.splitContainer2.Size = new System.Drawing.Size(552, 32);
+            this.splitContainer2.SplitterDistance = 87;
+            this.splitContainer2.TabIndex = 0;
+            // 
+            // uxSelectMDBFolderCommand
+            // 
+            this.uxSelectMDBFolderCommand.AutoSize = true;
+            this.uxSelectMDBFolderCommand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.uxSelectMDBFolderCommand.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uxSelectMDBFolderCommand.Depth = 0;
+            this.uxSelectMDBFolderCommand.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uxSelectMDBFolderCommand.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.uxSelectMDBFolderCommand.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.uxSelectMDBFolderCommand.Location = new System.Drawing.Point(0, 0);
+            this.uxSelectMDBFolderCommand.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.uxSelectMDBFolderCommand.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uxSelectMDBFolderCommand.Name = "uxSelectMDBFolderCommand";
+            this.uxSelectMDBFolderCommand.Primary = false;
+            this.uxSelectMDBFolderCommand.Size = new System.Drawing.Size(87, 32);
+            this.uxSelectMDBFolderCommand.TabIndex = 25;
+            this.uxSelectMDBFolderCommand.Text = "開く";
+            this.uxSelectMDBFolderCommand.UseVisualStyleBackColor = false;
+            this.uxSelectMDBFolderCommand.Click += new System.EventHandler(this.UxSelectMDBFolderCommand_Click);
+            // 
+            // uxSelectedMDBFolderPathText
+            // 
+            this.uxSelectedMDBFolderPathText.AccessibleName = "1234";
+            this.uxSelectedMDBFolderPathText.Depth = 0;
+            this.uxSelectedMDBFolderPathText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uxSelectedMDBFolderPathText.Hint = "empty";
+            this.uxSelectedMDBFolderPathText.Location = new System.Drawing.Point(0, 5);
+            this.uxSelectedMDBFolderPathText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uxSelectedMDBFolderPathText.Name = "uxSelectedMDBFolderPathText";
+            this.uxSelectedMDBFolderPathText.PasswordChar = '\0';
+            this.uxSelectedMDBFolderPathText.SelectedText = "";
+            this.uxSelectedMDBFolderPathText.SelectionLength = 0;
+            this.uxSelectedMDBFolderPathText.SelectionStart = 0;
+            this.uxSelectedMDBFolderPathText.Size = new System.Drawing.Size(461, 23);
+            this.uxSelectedMDBFolderPathText.TabIndex = 26;
+            this.uxSelectedMDBFolderPathText.UseSystemPasswordChar = false;
+            // 
+            // uxSelectedMDBFolderItemsDataListView
+            // 
+            this.uxSelectedMDBFolderItemsDataListView.CellEditUseWholeCell = false;
+            this.uxSelectedMDBFolderItemsDataListView.DataSource = null;
+            this.uxSelectedMDBFolderItemsDataListView.Location = new System.Drawing.Point(244, 146);
+            this.uxSelectedMDBFolderItemsDataListView.Name = "uxSelectedMDBFolderItemsDataListView";
+            this.uxSelectedMDBFolderItemsDataListView.Size = new System.Drawing.Size(121, 97);
+            this.uxSelectedMDBFolderItemsDataListView.TabIndex = 0;
+            this.uxSelectedMDBFolderItemsDataListView.UseCompatibleStateImageBehavior = false;
+            this.uxSelectedMDBFolderItemsDataListView.View = System.Windows.Forms.View.Details;
             // 
             // MDBSelectorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 519);
-            this.Controls.Add(this.objectListView1);
-            this.Controls.Add(this.materialSingleLineTextField1);
-            this.Controls.Add(this.uxSelectFolderCommand);
+            this.ClientSize = new System.Drawing.Size(558, 799);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "MDBSelectorForm";
+            this.Padding = new System.Windows.Forms.Padding(3, 65, 3, 3);
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MDBSelectorForm";
-            ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uxSelectedMDBFolderItemsDataListView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
+
+
         #endregion
 
-        private BrightIdeasSoftware.ObjectListView objectListView1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialFlatButton uxSelectFolderCommand;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private MaterialSkin.Controls.MaterialFlatButton uxSelectMDBFolderCommand;
+        private MaterialSkin.Controls.MaterialSingleLineTextField uxSelectedMDBFolderPathText;
+        private BrightIdeasSoftware.DataListView uxSelectedMDBFolderItemsDataListView;
     }
 }

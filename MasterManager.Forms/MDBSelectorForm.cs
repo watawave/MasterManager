@@ -1,12 +1,12 @@
 ﻿using INTEC.Med.CommonLibrary;                           //add
-using INTEC.Med.MasterManager.Core.ViewsAbstraction;     //add
+using INTEC.Med.MasterManager.ViewsAbstraction;     //add
 using log4net;                                           //add
-using MaterialSkin;                                      //add(マテリアルスキン)
-using System.Windows.Forms;
-using System;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
-namespace INTEC.Med.MasterManager.Forms
+namespace INTEC.Med.MasterManager
 {
     public partial class MDBSelectorForm : MaterialSkin.Controls.MaterialForm, IMDBSelectorView
     {
@@ -14,7 +14,12 @@ namespace INTEC.Med.MasterManager.Forms
 
         private ILog _log = LogFetcher.GetLogger();
         private string _defaultOpenPath;
-        private string _lastOpenPath;
+
+        public event GetLastOpenPathHandler _getLastOpenPath;
+
+        public event SetLastOpenPathHandler _setLastOpenPath;
+
+        public event IsContainsMDBHandler _isContaninsMDB;
 
         #endregion _member変数
 
@@ -30,11 +35,6 @@ namespace INTEC.Med.MasterManager.Forms
             set { _defaultOpenPath = value; }
         }
 
-        public string LastOpenPath {
-            get { return _lastOpenPath; }
-            set { _lastOpenPath = value; }
-        }
-
         #endregion プロパティ（インタフェース用）
 
         public MDBSelectorForm()
@@ -45,44 +45,51 @@ namespace INTEC.Med.MasterManager.Forms
 
         #region イベントPRESENTER⇒VIEW
 
-        /// <summary>
-        /// フォーム表示
-        /// </summary>
         public void ShowView()
         {
             _log.Info(this.Text + " 表示");
             this.ShowDialog();
         }
 
-        /// <summary>e
-        /// エラーメッセージ表示
-        /// </summary>
-        /// <param name="ex"></param>
         public void HandleError(Exception ex)
         {
-            _log.Error(ex.Message);
+            _log.Info("エラーメッセージ表示");
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+
+
+
         #endregion イベントPRESENTER⇒VIEW
 
-        private void uxSelectFolderCommand_Click(object sender, EventArgs e)
+        private void UxSelectMDBFolderCommand_Click(object sender, EventArgs e)
         {
             using (CommonOpenFileDialog dialog = new CommonOpenFileDialog())
             {
-                dialog.InitialDirectory = _lastOpenPath;
-                if (string.IsNullOrEmpty(_lastOpenPath))
-                {
-                    dialog.InitialDirectory = _defaultOpenPath;
-                }
+                //_getLastOpenPathはMasterManagerのSettingIni
+                //_defaultOpenPathはMasterManagerのCommonConstant
+                dialog.InitialDirectory = string.IsNullOrEmpty(_getLastOpenPath()) ? _defaultOpenPath : _getLastOpenPath();
+
                 dialog.IsFolderPicker = true;
                 if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
                 {
-                    //TODO:サンプルを見ながらMDB登録フォームを出して、名前つけて登録できるようにする。なので、MDBリスト作ったりXMLシリアライズ化するのはそいつからキック（汎用性に注意！
+                    /*
+                    //MDB含んでるフォルダならスプレッドを返す
+                    List<string> mdbFileList = _isContaninsMDB(dialog.FileName);
+                    */
 
-                    //TODO: MODELに移管
-                    //Properties.Settings.Default.LastOpenPath = dialog.FileName;
-                    //Properties.Settings.Default.Save();
+
+                    if (_isContaninsMDB(dialog.FileName))
+                    {
+                        //todo:スプレッドに表示
+                        /*
+                        uxSelectedMDBFolderItemsDataListView.BeginUpdate();
+                        uxSelectedMDBFolderItemsDataListView.DataSource = mdbFileList;
+                        uxSelectedMDBFolderItemsDataListView.EndUpdate();
+                        */
+
+                    }
+                    _setLastOpenPath(dialog.FileName);
                 }
             }
         }
